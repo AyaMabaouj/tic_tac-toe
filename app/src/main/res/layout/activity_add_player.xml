@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlayer"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/PigPink"
+    >
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="25dp"
+        android:background="@drawable/myborder">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ENTER \n PLAYER NAME"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:id="@+id/title"
+    android:textSize="35sp"
+    android:textColor="@color/PigPink"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/playerone"
+            android:background="@drawable/myborder"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:maxLines="1"
+            android:textStyle="italic"
+            android:hint="Enter player one name"
+            android:textColor="@color/BlossomPink"
+            android:drawableLeft="@drawable/smallcross"
+            android:drawablePadding="8dp"
+
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/playertwo"
+            android:background="@drawable/myborder"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:maxLines="1"
+            android:textStyle="italic"
+            android:hint="Enter player two name"
+            android:textColor="@color/BlossomPink"
+            android:drawableLeft="@drawable/smallcircle"
+            android:drawablePadding="8dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/startGame"
+            android:layout_marginTop="35dp"
+            android:text="Start game"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            android:backgroundTint="@color/BlossomPink"
+            ></Button>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
